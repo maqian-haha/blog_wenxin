@@ -1,0 +1,100 @@
+
+.dingdan{
+    width: 960px;
+    height: auto;
+    margin:0px auto;
+    padding:20px;
+}
+
+.dingdan>.title{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.dingdan>.title>li{
+    float: left;
+    width: 130px;
+    text-align: center;
+    line-height: 50px;
+    height: 100%;
+    position: relative;
+}
+.dingdan>.title>li .xuanzhong{
+    width: 130px;
+    height: 2px;
+    background: #292729;
+    position:absolute;
+    top:49px;
+    left:0;
+}
+.dingdan>.title>li .xuanzhong1{
+    width: 0px;
+    height: 0px;
+    background: #292729;
+    position:absolute;
+    top:49px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: all 1s;
+}
+.dingdan>.title>li:hover .xuanzhong1{
+    width: 130px;
+    height: 2px;
+}
+.goods{
+    width: 100%;
+    height: auto;
+}
+.titleInfo{
+    width: 100%;
+    height:60px;
+   line-height: 60px;
+}
+.titleInfo>span{
+    float: left;
+    width:120px;
+    height:100%;
+}
+.titleInfo>span:nth-of-type(2){
+    width: 360px;
+    height:100%;
+}
+
+.goods>li{
+    margin:10px 0;
+    width: 100%;
+    height:120px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:20px 10px;
+    box-sizing: border-box;
+}
+.goods>li>div{
+    float: left;
+}
+.goodsImg{
+    width: 80px;
+    height:80px ;
+    margin:0 10px;
+    background: #55a532;
+}
+.goodsDesc{
+    width: 355px;
+    height: auto;
+    line-height: 20px;
+    font-size: 14px;
+    padding-right:20px;
+    box-sizing: border-box;
+}
+.sameW{
+    width: 120px;
+    height:100%;
+}
+.goodsOpe{
+    width: 110px;
+}
+.goodsOpe>a{
+    display: block;
+}

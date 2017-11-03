@@ -1,0 +1,193 @@
+.focus{
+    width: 1000px;
+    height:auto;
+    overflow: hidden;
+    margin:0 auto;
+    padding:20px;
+}
+.focus>.left{
+    width: 280px;
+    overflow: auto;
+    position: fixed;
+    top:80px;
+    left:182px;
+    height:540px;
+}
+.leftCopy{
+    width: 280px;
+    height:540px;
+    float: left;
+}
+.focus>.left .top{
+    width: 100%;
+    height:40px;
+}
+.focus>.left .top a{
+    float:left;
+    margin-left:20px;
+    line-height: 40px;
+}
+.focus>.left .top a:last-of-type{
+    float:right;
+    margin-right:20px;
+}
+/*左侧关注栏*/
+
+.aside{
+    width: 100%;
+    height: auto;
+
+}
+.aside>li{
+    width: 236px;
+    height: 40px;
+    padding:10px 22px;
+    border-radius: 10px;
+}
+.aside>li:first-of-type{
+    background:white;
+}
+
+.aside>li:hover{
+    background:white;
+}
+.aside>li>a{
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 40px;
+}
+.aside>li>a .img{
+    float: left;
+    width:40px;
+    height:40px;
+    border-radius:10px;
+    background: gray;
+    margin-right:20px;
+}
+.aside>li:first-of-type .img{
+
+    border-radius:50%;
+
+}
+.aside>li>a .img img{
+    width:100%;
+}
+/*右侧内容*/
+/*文章*/
+.focus>.right{
+    width:700px;
+    height:auto;
+    float:right;
+    margin-left:20px;
+}
+.articleList{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.articleList>li{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+    border-bottom: 1px dashed #ccc;
+    padding-left:40px;
+    box-sizing: border-box;
+}
+.articleList li:last-of-type{
+    border-bottom:0;
+}
+.zuozhe{
+    width: 100%;
+    height: 60px;
+
+}
+.zuozhe a{
+    float: left;
+    width: auto;
+    height: 100%;
+
+}
+.zuozhe .aphoto{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top:10px;
+    border-radius: 50%;
+    border:1px solid #ccc;
+}
+.zuozhe .nicheng{
+    margin-left:20px;
+    float: left;
+    line-height: 60px;
+}
+.zuozhe span{
+    margin-left:20px;
+    float: left;
+    line-height: 60px;
+}
+.articleList>li .conBox{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.articleList li .conBox .left{
+    width:460px;
+    height: auto;
+    float: left;
+}
+.articleList li .conBox .left a{
+    display: block;
+    width:500px;
+    height:30px;
+
+}
+.articleList li .conBox .left a h3{
+    font-size: 20px;
+    color: #292729;
+    font-weight: bold;
+
+}
+
+.articleList li .conBox .left a:hover h3{
+    color:#FF8288;
+}
+.articleList li .conBox .left .con{
+    margin-top:10px;
+    margin-bottom:10px;
+    line-height: 24px;
+    font-size: 13px;
+}
+.articleList>li .conBox .photoBox{
+    float: right;
+    width: 150px;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding:4px;
+}
+.articleList>li .conBox .photoBox .img{
+    width: 100%;
+    height: 100%;
+}
+.articleList>li .conBox .photoBox .img img{
+    width: 100%;
+}
+.articleList li .bottom{
+    width: 100%;
+    height: 50px;
+}
+.articleList>li .bottom .sgd{
+    float: left;
+}
+.articleList li .bottom .sgd li{
+    float: left;
+    margin-right:20px;
+    font-size: 14px;
+    color: #6A6F67;
+}
+.articleList li .bottom .sgd li a{
+    color: #6A6F67;
+}

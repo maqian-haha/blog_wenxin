@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="../css/iconfont/iconfont.css">
+    <title>注册</title>
+</head>
+<body>
+<div class="logo1">
+    <img src="../img/llogo.png" alt="">
+</div>
+<div class="loginBox">
+    <p class="loginzi">注册</p>
+    <div class="xian">
+        <p class="otherLogin">使用第三方注册</p>
+    </div>
+    <div class="logoBox">
+        <li><a href="" class="iconfont icon-qq2"></a></li>
+        <li><a href="" class="iconfont icon-weibo"></a></li>
+        <li><a href="" class="iconfont icon-weixin1"></a></li>
+    </div>
+    <div class="xian1">
+        <p class="otherLogin">请注册账户</p>
+    </div>
+   <form action="index.php?m=index&f=reg&a=checkReg" method="post">
+        <div class="user">
+            <input type="text" name="uname" placeholder="请输入你的用户名">
+        </div>
+        <div class="pass">
+            <input type="password" name="upass" id="upass" placeholder="请输入密码">
+        </div>
+        <div class="pass1">
+            <input type="password" name="upass1" placeholder="请确认密码">
+        </div>
+        <div class="loginBtn">
+            <input type="submit" class="Btn" value="注册">
+        </div>
+    </form>
+    <div class="help">
+        <p>已有账号，请点击<a href="login.html"><span>登录</span></a></p>
+    </div>
+</form>
+</div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/jquery.validate.js"></script>
+<script src="../js/indexReg.js"></script>

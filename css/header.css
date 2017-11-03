@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: #292729;
+}
+body{
+    width: 100%;
+    height: auto;
+    background:#EAEACE ;
+}
+header{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding:0 30px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    z-index: 555;
+}
+.headerCopy{
+    width: 100%;
+    height: 60px;
+}
+header .logo{
+    width: 100px;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+
+}
+header .logo img{
+    height: 100%;
+}
+header .nav{
+    float:left;
+    width:280px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    line-height: 60px;
+}
+header .login{
+    width: 180px;
+    height:59px;
+    float:right;
+    position: relative;
+}
+header .login>a{
+    float: left;
+    border:1px solid #ccc;
+    padding:6px 15px;
+    margin-left:20px;
+    border-radius: 20px;
+    margin-top:12px;
+    color: #292729;
+}
+header .login>a:hover{
+    border:1px solid #F69581;
+    background:#FCE6F2;
+}
+header .write{
+    float:right;
+    padding:6px 15px;
+    margin-left:20px;
+    border-radius: 20px;
+    margin-top:12px;
+    color: #ffffff;
+    background:#FF8288;
+}
+.slip{
+    width: 170px;
+    height:auto;
+    position: absolute;
+    top:59px;
+    left:20px;
+    background: white;
+    box-shadow:0px 6px 12px rgba(0,0,0,0.175);
+    padding:10px 0;
+    display:none;
+
+}
+.slip>li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size:16px;
+    padding:0px 20px;
+    box-sizing: border-box;
+}
+.login:hover .slip{
+    display: block;
+}
+.slip>li:hover{
+    background: #eeeeee;
+}
+.slip>li>a>span{
+    padding-right:20px;
+    line-height:50px;
+    font-size: 16px;
+}
+header>.search{
+    float: left;
+    margin-left:20px;
+    width: 200px;
+    height: 30px;
+    margin-top:15px;
+    position: relative;
+}
+header>.search input{
+    width:198px ;
+    height: 28px;
+    border:none;
+    outline: none;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding:0 10px;
+    line-height: 38px;
+}
+header>.search span{
+    position: absolute;
+    right:0;
+    top:0;
+    line-height:28px;
+}
+header .iconfont{
+    color:#FF8288;
+}

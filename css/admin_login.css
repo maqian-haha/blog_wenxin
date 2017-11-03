@@ -1,0 +1,65 @@
+@import "base.css";
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*background-image: url(../img/blue2.jpg);*/
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.login{
+    position: absolute;
+    left:100px;top:60px;
+    width:200px;height:90px;
+    background-image: url(../img/llogo.png);
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+.header-main{
+    width:400px;
+    margin:auto;
+    margin-top:60px;
+    border:1px solid #aaa;
+    border-radius: 4px;
+    height:500px;
+    background: #fff;
+    box-shadow: 0 0 15px #888;
+    text-align: center;
+    padding:30px;
+
+}
+
+.title{
+ letter-spacing: 15px;
+    position: relative;
+    margin-top:10px;
+}
+.list-group{
+    margin-top:30px;
+}
+
+input[type=text],input[type=password]{
+    border:none;margin-left:10px;
+}
+
+input:focus{
+    outline: none;
+}
+.btn{
+    margin-top:30px;
+}
+.dian{
+    width:5px;height:5px;
+    background: #0b2c89;
+    border-radius: 50%;
+    position: absolute;
+    left:160px;top:0;bottom: 0;
+    margin:auto;
+}
+label.error{
+    position: absolute;
+    color: red;
+    top:0;
+    right:-100px;
+}

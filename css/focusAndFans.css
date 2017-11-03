@@ -1,0 +1,100 @@
+.guanzhuBtns{
+    width: 100%;
+    height:60px;
+    /* background: white;*/
+    border-bottom:1px solid #ccc;
+}
+.guanzhuBtns>li{
+    width: auto;
+    height:60px;
+    line-height:60px;
+    float: left;
+    padding:0 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+.guanzhuBtns>li .xuanzhong{
+    width:0px;
+    height:2px;
+    background: #292729;
+    position: absolute;
+    top:59px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: all 1s;
+    opacity: 0;
+}
+.guanzhuBtns>li:first-child:hover .xuanzhong{
+    width:100px;
+    height:2px;
+    opacity:1;
+}
+.guanzhuBtns>li:nth-of-type(2):hover .xuanzhong{
+    width:80px;
+    opacity:1;
+    height:2px;
+}
+.guanzhuList{
+    width: 100%;
+    height:auto;
+    margin-bottom: 50px;
+
+}
+.guanzhuList>li{
+    width: 100%;
+    height:100px;
+    border-bottom:1px solid #ccc;
+}
+.guanzhuList>li>a{
+    float: left;
+    width: 50px;
+    height:50px;
+    background: pink;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    border-bottom:1px solid #ccc;
+    margin:24px;
+
+}
+.guanzhuList>li .miaoshu{
+    float: left;
+    width: auto;
+    height: 72px;
+    margin:14px 0;
+}
+.guanzhuList>li .add{
+    float:right;
+    height:40px;
+    width: 100px;
+    text-align:center;
+    margin:28px 20px;
+    line-height:40px;
+    border-radius:30px;
+    border:1px solid #ccc;
+}
+.guanzhuList>li .add:hover{
+
+}
+.guanzhuList>li .miaoshu>p.name{
+    line-height: 30px;
+}
+.guanzhuList>li .miaoshu>p:last-of-type{
+    line-height:20px;
+    color: #6A6F67;
+    font-size: 12px;
+}
+.guanzhuList>li .miaoshu .meta span{
+    padding:0 10px;
+    border-right: 1px solid #ccc;
+    font-size: 12px;
+    color: #6A6F67;
+    line-height: 20px;
+}
+.guanzhuList>li .miaoshu .meta span:first-child{
+    padding-left:0;
+}
+.guanzhuList>li .miaoshu .meta span:last-of-type{
+    border-right:0;
+}

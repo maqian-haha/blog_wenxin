@@ -1,0 +1,116 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>表格单元格编辑</title>
+    <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/dpl.css" rel="stylesheet">
+    <link href="http://g.alicdn.com/bui/bui/1.1.21/css/bs3/bui.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="demo-content">
+    <div class="row">
+        <div class="span16">
+            <div id="grid">
+
+            </div>
+        </div>
+    </div>
+    <p class="row">
+    <form class="span8 offset3" id="J_Form" action="" method="post">
+        <input type="hidden" name="gridValue">
+        <button type="sumbmit" class="button button-primary">提交</button>
+    </form>
+    </p>
+
+
+    <script src="http://g.tbcdn.cn/fi/bui/jquery-1.8.1.min.js"></script>
+    <script src="http://g.alicdn.com/bui/seajs/2.3.0/sea.js"></script>
+    <script src="http://g.alicdn.com/bui/bui/1.1.21/config.js"></script>
+
+    &lt;!&ndash; script start &ndash;&gt;
+    <script type="text/javascript" src="{JS_URL}/showAdmin.js">
+    </script>
+    &lt;!&ndash; script end &ndash;&gt;
+</div>
+</body>
+</html>-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_URL}/bootstrap.min.css">
+</head>
+<style>
+    button{
+        margin-right:20px;
+    }
+    .img{
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+    .img>img{
+        width: 60px;
+    }
+</style>
+<body>
+<div class="container" STYLE="padding-top: 20px">
+<table class="table table-bordered table-striped container">
+    <tr>
+        <th>管理员名</th>
+        <th>角色</th>
+        <th>头像</th>
+        <th>昵称</th>
+        <th>操作</th>
+    </tr>
+    {foreach $list as $v}
+    <tr>
+        <td>{$v["aname"]}</td>
+        <td>{$v["lname"]}</td>
+        <td><div class="img"><img src="{$v['aphoto']}" alt=""></div></td>
+        <td>{$v["anicheng"]}</td>
+        <td attr="{$v['aid']}">
+            <button type="button" class="btn btn-danger del" >删除</button>
+            <a href="index.php?m=admin&f=editAdmin&aid={$v['aid']}"><button type="button" class="btn btn-info edit">编辑</button></a>
+        </td>
+    </tr>
+    {/foreach}
+</table>
+</div>
+<!--{$pages}-->
+</body>
+</html>
+<script src="{JS_URL}/jquery-3.2.1.js"></script>
+<script>
+    $(".del").click(function(){
+        var aid=$(this).parent().attr("attr");
+        var that=$(this);
+        $.ajax({
+            url:"index.php?m=admin&f=showAdmin&a=del",
+            data:{
+                aid:aid},
+            type:"post",
+            success:function(e){
+                if(e=="ok"){
+                    alert("删除成功");
+                    that.parent().parent().remove();
+                }else if(e=="err"){
+                    alert("您没有权限");
+                }
+            }
+        })
+    })
+    $(window).css("background","red");
+    $(window).scroll(function(){
+        //$(window).scrollTop()滚动条滚动的距离
+        //$(table).outHeight()表格的高度
+        //$(window).height()浏览器当前窗口可视区域高度
+       console.log($(window).height());
+    })
+</script>
+

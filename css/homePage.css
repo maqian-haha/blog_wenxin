@@ -1,0 +1,251 @@
+.person{
+    width:1000px;
+    height:auto;
+    margin:0 auto;
+   /* background:indianred;*/
+    padding:20px;
+}
+.person>.left{
+     width:70%;
+     height:auto;
+     float: left;
+     /*background: palegoldenrod;*/
+     overflow: hidden;
+     padding:0 20px;
+     box-sizing: border-box;
+ }
+.person>.right{
+    width:30%;
+    height:auto;
+    float:right;
+    overflow: hidden;
+}
+.person>.right .list{
+    margin-top:58px;
+    width: 100%;
+    height:auto;
+    border-bottom:1px solid #ccc;
+    border-top:1px solid #ccc;
+}
+.person>.right .list>li{
+    height: 50px;
+}
+.person>.right .list>li .logo{
+    height:20px;
+    width: 20px;
+    margin:15px;
+    float: left;
+    font-size: 20px;
+}
+.person>.right .list>li .logoZi{
+    height:50px;
+    width:auto;
+    float: left;
+    line-height:50px;
+}
+.person>.right .create{
+    width: 100%;
+    height:90px;
+    padding:10px 25px;
+    box-sizing: border-box;
+    border-bottom:1px solid #ccc;
+}
+.person>.right .create>p{
+    line-height: 35px;
+    height:35px;
+}
+.person>.right .create>a{
+    color:green;
+    display: block;
+    line-height: 35px;
+    height:35px;
+}
+.person .info{
+    width: 100%;
+    height: 130px;
+   /* background:white;*/
+}
+.person .info .photo{
+    margin:25px ;
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: palevioletred;
+}
+.person .info .infoWord{
+    margin-top:25px ;
+    float:right;
+    width:500px;
+    height: 80px;
+
+}
+.person .info .infoWord>h4{
+    line-height: 40px;
+}
+.person .info .infoWord>ul{
+    width: 100%;
+    height:40px;
+    /*background: white;*/
+}
+.person .info .infoWord>ul>li{
+    width: auto;
+    height: 100%;
+    border-right:1px solid #ccc;
+    float: left;
+}
+.person .info .infoWord>ul>li:last-of-type{
+    border-right:none;
+}
+.person .info .infoWord>ul>li>p{
+    box-sizing: border-box;
+    width: auto;
+    padding:0 5px;
+    height: 20px;
+    font-size: 12px;
+    color: #6A6F67;
+}
+.person .left>.guanzhuBtns{
+    width: 100%;
+    height:60px;
+    border-bottom:1px solid #ccc;
+}
+.person .left>.guanzhuBtns>li{
+    width:130px;
+    height:60px;
+    line-height:60px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.person .left>.guanzhuBtns>li .xuanzhong{
+    width:0px;
+    height:2px;
+    background: #292729;
+    position: absolute;
+    top:59px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    transition: all 1s;
+    opacity: 0;
+}
+.person .left>.guanzhuBtns>li:hover .xuanzhong{
+    width:130px;
+    height:2px;
+    opacity:1;
+}
+.person .left>.guanzhuBtns>li .xuanzhong1{
+    width:130px;
+    height:2px;
+    position: absolute;
+    top:59px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    background: #292729;
+}
+.mainCon{
+    margin-top:20px;
+    width: 100%;
+    height: auto;
+}
+.mainCon>li{
+    width: 100%;
+    height: auto;
+    padding-bottom:10px;
+    border-bottom: 1px solid #ccc;
+}
+.mainCon>li>.user{
+    width: 100%;
+    height: 40px;
+    padding-top:20px;
+}
+.mainCon>li>.user>a{
+    float: left;
+    width: auto;
+    height: 100%;
+}
+.mainCon>li>.user>a>.img{
+    width: 32px;
+    height: 32px;
+    margin:4px 0;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+}
+.mainCon>li>.user>a>.img img{
+    width: 32px;
+}
+.mainCon>li>.user>a>.name{
+    float: left;
+    line-height: 40px;
+    font-size: 14px;
+    padding:0 20px;
+}
+.mainCon>li>.user>span{
+    line-height: 40px;
+    font-size: 12px;
+    color: #6A6F67;
+}
+.mainCon>li>.xiangqing{
+    margin:5px 0;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+.mainCon>li>.xiangqing>.info{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+}
+.mainCon>li>.xiangqing>.info>.img{
+    float: left;
+    width:48px;
+    height: 48px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mainCon>li>.xiangqing>.info>.middle{
+    float: left;
+    margin-left:20px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6A6F67;
+}
+.mainCon>li>.xiangqing>.info>.middle .lei{
+     display: block;
+    font-size: 16px;
+}
+.mainCon>li>.xiangqing>.info>.middle>a:nth-of-type(2){
+    font-size: 12px;
+    color: #3194D0;
+}
+.mainCon>li>.xiangqing>.info>.guanzhuBtn{
+    float: right;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border:1px solid #ccc;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.mainCon>li>.xiangqing>.info>.img img{
+    width:48px;
+}
+.mainCon>li>.xiangqing>.web{
+    font-size: 12px;
+    line-height:60px;
+}
+
+
+

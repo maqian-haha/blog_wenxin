@@ -1,0 +1,432 @@
+
+section.main{
+    width: 100%;
+    height: auto;
+
+}
+.main main{
+    width:900px;
+    height: auto;
+    margin:50px auto;
+    margin-bottom:0;
+    padding:50px;
+    padding-bottom: 0;
+    background: white;
+}
+.main main h1{
+    text-align: center;
+}
+.main .author{
+    width:70%;
+    height:60px;
+    padding:19px 0;
+    margin:0 auto;
+
+}
+.author>.img{
+    width: 60px;
+    height:60px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.author .info{
+    float: left;
+    width:398px;
+    height: 100%;
+    margin-left:20px;
+    padding-top:10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.author .info p{
+    font-size: 12px;
+    color: #6A6F67;
+}
+.main .con{
+    width:900px;
+    height:auto;
+    overflow: hidden;
+}
+.main .con .img{
+    width: 700px;
+    height: 466px;
+    margin:30px auto;
+}
+.main .con .img img{
+    width:100%;
+}
+.main .con .daoyu{
+    width: 70%;
+    height: auto;
+    padding:30px;
+    background: #cccccc;
+    margin:30px auto;
+    border-left:5px solid #292729;
+}
+.main .con .daoyu p{
+    line-height: 24px;
+    font-weight: bold;
+}
+.main .con>p{
+    width:78%;
+    height: auto;
+    padding:10px 30px;
+    margin:0px auto;
+    line-height: 24px;
+}
+.main .con>p.end{
+    border-bottom: 1px solid #ccc;
+}
+.main .jieshao{
+    width: 80%;
+    height: auto;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    margin:30px auto;
+}
+.main .jieshao .top{
+    width:100%;
+    height:60px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+.main .jieshao .top>.img{
+    width: 60px;
+    height:60px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.jieshao .top .info{
+    float: left;
+    width:398px;
+    height: 100%;
+    margin-left:20px;
+    padding-top:10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.jieshao .top p{
+    font-size: 12px;
+    color: #6A6F67;
+}
+.jieshao .top .guanzhu{
+    float: right;
+    padding:5px 18px;
+    border: 1px solid #3194D0;
+    border-radius: 20px;
+    background: #3194D0;
+    margin-top:20px;
+    cursor: pointer;
+}
+.jieshao .foot{
+    padding-top:20px;
+    font-size: 13px;
+}
+.zhichi{
+    width: 100%;
+    height: auto;
+    margin:20px 0;
+}
+.zhichi .zhichiBtn{
+    width:70px;
+    padding:10px 18px;
+    cursor: pointer;
+    background:#EC6149;
+    margin:16px auto;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+
+}
+.zhichi .men{
+    width:100%;
+    height: 52px;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+.zhichi .men li{
+    width: 50px;
+    height: 50px;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    background:palegoldenrod;
+    transition: all 1s;
+}
+.zhichi .men li:hover{
+    transform: scale(1.1);
+}
+.btn-group{
+    width: 100%;
+    height:62px;
+    margin:50px 0;
+}
+.btn-group .like{
+    float: right;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    border:1px solid #EC6149;
+    padding:10px;
+    box-sizing: border-box;
+    margin-right:40px;
+
+}
+.btn-group .like .left{
+    width: 50%;
+    border-right:1px solid #EC6149;
+    line-height: 40px;
+    text-align: center;
+    color: #EC6149;
+    float: left;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.btn-group .like .right{
+    width: 46%;
+    line-height: 40px;
+    text-align: center;
+    color: #EC6149;
+    float:left;
+    font-size: 18px;
+
+}
+.btn-group .modal-btn{
+    float: left;
+    margin-top:20px;
+    margin-left: 20px;
+}
+/*评论*/
+.commend{
+    width:100%;
+    height:200px;
+}
+.commend>.leftImg{
+    width: 60px;
+    height:60px;
+    float: left;
+    margin-left:20px;
+    background: palegreen;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.commend>.con{
+     float:left;
+     width: 680px;
+     height:160px;
+     border-radius: 20px;
+    margin-left:30px;
+    overflow: hidden;
+ }
+.commend>.con textarea{
+    resize: none;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    border:none;
+    border: 1px solid #ccc;
+    padding:30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #292729;
+}
+.commend .tijiao{
+    width: 100%;
+    clear: both;
+    height:50px;
+    display: none;
+}
+.commend .tijiao .tip{
+    float: left;
+    margin-left:120px;
+    line-height:50px;
+}
+.commend .tijiao .btn{
+    margin-right: 60px;
+    float: right;
+    width: 400px;
+    height: 100%;
+}
+.commend .tijiao .btn .del{
+    float:left;
+    padding:6px 20px;
+    border-radius:5px;
+    margin-top:10px;
+    color:#6A6F67;
+    margin-left:150px;
+    background: #cccccc;
+    cursor:pointer;
+}
+.commend .tijiao input{
+    float:right;
+    margin-right:60px;
+    padding:7px 20px;
+    border-radius:5px;
+    border:none;
+    outline: none;
+    margin-top:10px;
+    background: pink;
+    color: white;
+
+}
+/*热门评论*/
+.hotC main{
+    width: 900px;
+    height: auto;
+    padding:50px;
+    margin:0 auto;
+    background: white;
+    margin-bottom: 40px;
+}
+.hotC main h3{
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+}
+.hotC main .hotCList{
+    width: 100%;
+    height: auto;
+}
+.hotC main .hotCList>li{
+    padding-bottom:20px;
+    border-bottom: 1px solid #ccc;
+}
+.hotC main .hotCList>li:last-of-type{
+    padding-bottom:20px;
+    border-bottom:0;
+}
+.hotC .author{
+    width:100%;
+    height:60px;
+    padding:19px 0;
+}
+.hotC .author>.img{
+    width: 60px;
+    height:60px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.hotC .author .info{
+    float: left;
+    width:398px;
+    height: 100%;
+    margin-left:20px;
+    padding-top:10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.hotC .author .info p{
+    font-size: 12px;
+    color: #6A6F67;
+}
+.hotC main .hotCList li.clist>p{
+    margin-left:21px;
+}
+.hotC main .hotCList .zan{
+    padding:10px 0;
+    margin-left:21px;
+}
+.hotC main .hotCList .huifu{
+    width: 90%;
+    height: auto;
+    padding:10px 20px;
+    margin-left:21px;
+    border-left:2px solid #ccc;
+    background: white;
+    box-sizing: border-box;
+}
+.hotC .hotCList .huifu li{
+    line-height: 24px;
+    font-size: 16px;
+    border-bottom: 1px dashed #ccc;
+    padding:10px 0;
+}
+.hotC .hotCList .huifu li .huifudian{
+    cursor: pointer;
+}
+.hotC .hotCList .huifu li:last-of-type{
+    border-bottom:0;
+}
+.hotC .hotCList .huifu li p:last-of-type{
+    color: #6A6F67;
+    font-size: 14px;
+}
+/*二次回复*/
+.hotC .hotCList .huifu .huifuR{
+    width:100%;
+    height:160px;
+    display: none;
+}
+
+.hotC .hotCList .huifu .huifuR .conR{
+    float:left;
+    width:100%;
+    height:100px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.hotC .hotCList .huifu  textarea{
+    resize: none;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    border:none;
+    border: 1px solid #ccc;
+    padding:20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #292729;
+}
+.hotC .hotCList .huifu .huifuR .tijiaoR{
+    width: 100%;
+    clear: both;
+    height:50px;
+}
+.hotC .hotCList .huifu .huifuR .tijiaoR .tipR{
+    float: left;
+    margin-left:50px;
+    line-height:50px;
+}
+.hotC .hotCList .huifu .huifuR .tijiaoR .btnR{
+    float: right;
+    width: 400px;
+    height: 100%;
+}
+.hotC .hotCList .huifu .huifuR .tijiaoR .btnR .delR{
+    float:left;
+    padding:6px 20px;
+    border-radius:5px;
+    margin-top:10px;
+    color:#6A6F67;
+    margin-left:150px;
+    background: #cccccc;
+    cursor:pointer;
+}
+.hotC .hotCList .huifu .huifuR .tijiaoR input{
+    float:right;
+    margin-right:60px;
+    padding:7px 20px;
+    border-radius:5px;
+    border:none;
+    outline: none;
+    margin-top:10px;
+    color: white;
+    background: #EC6149;
+
+}

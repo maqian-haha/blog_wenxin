@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_URL}/bootstrap.min.css">
+    <title>添加管理员</title>
+</head>
+<style>
+    .error{
+        color: red;
+    }
+    .form-control{
+        width: 50%;
+    }
+</style>
+<body>
+<form action="index.php?m=admin&f=addAdmin&a=insertSql" method="post" class="container" STYLE="padding-top: 20px">
+    <div class="form-group">
+        <label for="exampleInputEmail1">*管理员名</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" name="aname" placeholder="请输入管理员名">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">昵称</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" name="anicheng" placeholder="请输入昵称">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">*密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请设置密码" name="apass">
+    </div>
+    <div class="form-group">
+        <h5 style="font-weight: bolder">*请选择角色：</h5>
+        {foreach $data as $v}
+        <div class="radio">
+            <label>
+                <input type="radio" name="level" id="optionsRadios1" value="{$v['lid']}">
+                {$v["lname"]}
+            </label>
+        </div>
+        {/foreach}
+        <label id="level-error" style="display: none" class="error" for="level">角色不能为空</label>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">头像</label>
+        <input type="hidden" name="aphoto" value="" id="exampleInputFile">
+        <div class="box"></div>
+    </div>
+    <input type="submit" class="btn btn-default" value="提交">
+</form>
+
+</body>
+</html>
+<script src="{JS_URL}/upload.js"></script>
+<script src="{JS_URL}/jquery-3.2.1.js"></script>
+<script src="{JS_URL}/jquery.validate.js"></script>
+<script>
+    var uploadobj=new upload();
+    uploadobj.createView({
+        parent:document.querySelector(".box")});
+    uploadobj.up("index.php?m=admin&f=addAdmin&a=upload",function (e) {
+        document.querySelector("input[type=hidden]").value=e.join(";");
+    });
+    $("form").validate({
+        rules:{
+            aname: {
+                required: true,
+                minlength:2
+            },
+            apass:{
+                required: true,
+                minlength:5
+            },
+            level:{
+                required: true,
+            }
+
+        },
+        messages:{
+            aname: {
+                required: "用户名不能为空",
+                minlength: "用户名至少两个字符"
+            },
+            apass: {
+                required: "密码不能为空",
+                minlength: "密码至少五个字符"
+            },
+            level:{
+                required: "角色不能为空",
+            }
+
+        }
+    })
+</script>

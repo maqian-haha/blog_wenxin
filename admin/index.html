@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{CSS_URL}/indexAdmin.css">
+    <link rel="stylesheet" href="{CSS_URL}/iconfont/iconfont.css">
+    <script src="{JS_URL}/jquery-3.2.1.js"></script>
+    <script src="{JS_URL}/indexAdmin.js"></script>
+    <title>后台首页</title>
+</head>
+<body>
+<header>
+    <h3>温心后台管理</h3>
+    <div class="login">
+        <div class="aphoto">
+           <img src="{$aphoto}" alt="">
+        </div>
+        <p>{$aname}</p>
+        <div class="sanjiao"></div>
+        <div class="slip">
+            <a href="index.php?m=admin&f=adminSet" target="right">
+                <span class="iconfont icon-gerenziliao"></span>
+                <span>个人资料</span>
+            </a>
+            <a href="">
+                <span  class="iconfont icon-mima"></span>
+                <span>修改密码</span>
+            </a>
+            <a href="index.php?m=admin&f=loginout" >
+                <span class="iconfont icon-sign-out"></span>
+                <span>退出</span>
+            </a>
+        </div>
+    </div>
+</header>
+<section>
+    <ul class="left">
+        <li >
+            <a href="#">
+                <span class="iconfont icon-guanliyuan"></span>
+                <span>管理员管理</span>
+                <span class="iconfont icon-arrow-right"></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdminRole" target="right">管理员角色</a></li>
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看管理员</a></li>
+                <li><a href="index.php?m=admin&f=addAdmin&a=init" target="right">添加管理员</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-yonghuguanli"></span>
+                <span> 用户管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">用户角色</a></li>
+                <li><a href="">查看用户</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-yelaiyewang_liuyanguanli"></span>
+                <span>留言管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看留言</a></li>
+                <li><a href="">添加留言</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-neirongguanli"></span>
+                <span>内容管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看内容</a></li>
+                <li><a href="">添加内容</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-dingdanguanli"></span>
+                <span>订单管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看订单</a></li>
+                <li><a href="">添加订单</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-zhanghuguanli"></span>
+                <span>支付管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看管理员</a></li>
+                <li><a href="">添加管理员</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-yonghuguanli"></span>
+                <span>账户管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看管理员</a></li>
+                <li><a href="">添加管理员</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-icon-test"></span>
+                <span>分类管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看管理员</a></li>
+                <li><a href="">添加管理员</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-tuijianweiguanli"></span>
+                <span>推荐位管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看管理员</a></li>
+                <li><a href="">添加管理员</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="#">
+                <span class="iconfont icon-quanxianguanli"></span>
+                <span>权限管理</span>
+                <span class="iconfont icon-arrow-right "></span>
+            </a>
+            <ul class="item">
+                <li><a href="index.php?m=admin&f=showAdmin" target="right">查看管理员</a></li>
+                <li><a href="">添加管理员</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="right">
+        <iframe width="100%" height="auto"  src="" frameborder="0" name="right" target="right"></iframe>
+    </div>
+</section>
+</body>
+</html>

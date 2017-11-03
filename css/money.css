@@ -1,0 +1,131 @@
+.meAccount{
+    width: 950px;
+    height: 200px;
+    padding:25px;
+   /* background: palevioletred;*/
+    margin:0 auto;
+}
+.meAccount>div{
+    width: 316px;
+    height: 100%;
+    float: left;
+    border-right:1px solid #ccc;
+}
+.meAccount>div:last-child{
+    border-right:none;
+}
+.meAccount>div.info .photo{
+    float: left;
+    width: 80px;
+    height: 80px;
+    /*background: red;*/
+    margin:60px 30px;
+    margin-right:10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.meAccount>div.info .photo img{
+    width: 80px;
+}
+.meAccount>div.info .user{
+    float: left;
+    width:170px ;
+    height: 80px;
+    margin-top:60px;
+}
+.meAccount>div.info .user>p{
+    line-height:40px ;
+    height: 40px;
+    color: #6A6F67;
+}
+.meAccount>div.info .user>p:first-child{
+    font-weight: bold;
+    color:#292729;
+}
+.meAccount .middle>h3{
+    margin-top:60px;
+    margin-left:30px;
+}
+.meAccount .middle .addMoney{
+    width: 100%;
+    height: auto;
+    margin-left:30px;
+}
+.meAccount .addMoney>div{
+    float: left;
+}
+.meAccount .addMoney .add{
+    width:70px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius:30px;
+    background: #55a532;
+    margin-top:20px;
+    margin-right:10px;
+}
+.meAccount .addMoney>div:last-child{
+    margin-right:0;
+    line-height: 80px;
+}
+.meAccount .help p:first-child{
+    margin-top:20px;
+}
+.meAccount .help p{
+    line-height: 30px;
+    margin-left:30px;
+}
+.meAccount .help a{
+    display: block;
+    line-height: 30px;
+    margin-left:30px;
+    color: #3194D0;
+}
+.detail{
+    width: 950px;
+    height:auto;
+    padding:10px 0;
+  /*  background: palevioletred;*/
+    margin:0 auto;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+.detail>li{
+    height: 30px;
+    width: 100%;
+    padding:10px 0;
+    line-height: 30px;
+    border-bottom: 1px solid  #ccc;
+}
+.detail>li div{
+    padding:0 10px;
+    float: left;
+    height: 30px;
+    font-size: 15px;
+}
+.detail>li div:nth-of-type(1){
+    width: 135px;
+}
+.detail>li div:nth-of-type(2){
+    width:90px;
+}
+.detail>li div:nth-of-type(3){
+    width:386px;
+}
+.detail>li div:nth-of-type(4){
+    width:110px;
+}
+.detail>li div:nth-of-type(4){
+    width:150px;
+}
+
+.detail>li:last-of-type{
+    border-bottom:0;
+}
+.detail>li:first-of-type div{
+    border-right:1px dashed #ccc;
+}
+.detail>li>div:last-child{
+    border-right:0;
+}
+
